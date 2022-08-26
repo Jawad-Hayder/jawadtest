@@ -1,6 +1,9 @@
+<?php include("jawad.html")   ?>
 
+
+<div class="alert alert-success">
 <?php
-include("jawad.html");
+
 
 $name=strtoupper($_POST["name"]);
 $def= "<h1>The Student is : $name </h1>";
@@ -33,10 +36,12 @@ $sub=["Islamic","Arabic","English","Biology","Math","Chemistry","Physics"];
               
                   }elseif($name == NULL){
                   echo "";
-                  }
+                  }else{echo "Try Another Name";
+                }
                   
 
 
 
-                 ?>
+                 ?></div>
+
 
